@@ -15,7 +15,7 @@ const plusJakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://gold-coffee-beans.up.railway.app'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://gold-coffee-beans-production.up.railway.app'),
   title: "GOLD COFFEE BEANS | Преміальні свіжообсмажені зерна Specialty",
   description:
     "Крафтова ростерія GOLD COFFEE BEANS. Високогірні мікролоти арабіки класу Specialty свіжого врожаю. Прямий імпорт з найкращих терруарів світу, оцінка 88+ SCA.",
@@ -36,15 +36,17 @@ export const metadata: Metadata = {
     title: "GOLD COFFEE BEANS | Мистецтво досконалого зерна",
     description:
       "Преміальні свіжообсмажені мікролоти арабіки класу Specialty 88+ SCA. Каталог лімітованих сортів кави свіжого врожаю.",
-    url: "https://gold-coffee-beans.up.railway.app",
+    url: "https://gold-coffee-beans-production.up.railway.app",
     siteName: "GOLD COFFEE BEANS",
     locale: "uk_UA",
     type: "website",
     images: [
       {
         url: "/og-image.jpg",
+        secureUrl: "https://gold-coffee-beans-production.up.railway.app/og-image.jpg",
         width: 1200,
         height: 630,
+        type: "image/jpeg",
         alt: "GOLD COFFEE BEANS — Преміальні свіжообсмажені зерна Specialty",
       },
     ],
