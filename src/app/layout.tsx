@@ -15,9 +15,50 @@ const plusJakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "GOLD COFFEE BEANS | Преміальні свіжообсмажені кавові зерна Specialty",
-  description: "Ексклюзивна колекція високогірної арабіки класу Specialty від Gold Coffee Beans. Пряме постачання та обсмаження свіжих партій.",
-  keywords: ["Gold Coffee Beans", "кава в зернах", "specialty coffee", "купити каву", "свіже обсмаження", "арабіка", "постачання кави"],
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://gold-coffee-beans.up.railway.app'),
+  title: "GOLD COFFEE BEANS | Преміальні свіжообсмажені зерна Specialty",
+  description:
+    "Крафтова ростерія GOLD COFFEE BEANS. Високогірні мікролоти арабіки класу Specialty свіжого врожаю. Прямий імпорт з найкращих терруарів світу, оцінка 88+ SCA.",
+  keywords: [
+    "Gold Coffee Beans",
+    "кава в зернах",
+    "specialty coffee",
+    "купити каву",
+    "свіже обсмаження",
+    "арабіка",
+    "мікролоти",
+    "Geisha coffee",
+    "постачання кави для кав'ярень",
+  ],
+  authors: [{ name: "GOLD COFFEE BEANS & UTS" }],
+  creator: "Useful Tech Solutions (UTS)",
+  openGraph: {
+    title: "GOLD COFFEE BEANS | Мистецтво досконалого зерна",
+    description:
+      "Преміальні свіжообсмажені мікролоти арабіки класу Specialty 88+ SCA. Каталог лімітованих сортів кави свіжого врожаю.",
+    url: "https://gold-coffee-beans.up.railway.app",
+    siteName: "GOLD COFFEE BEANS",
+    locale: "uk_UA",
+    type: "website",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "GOLD COFFEE BEANS — Преміальні свіжообсмажені зерна Specialty",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "GOLD COFFEE BEANS | Мистецтво досконалого зерна",
+    description:
+      "Преміальні свіжообсмажені мікролоти арабіки класу Specialty 88+ SCA. Каталог лімітованих сортів кави свіжого врожаю.",
+    images: ["/og-image.jpg"],
+  },
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
