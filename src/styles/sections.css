@@ -1,0 +1,41 @@
+/* Shared Section Styles via Tailwind @apply */
+
+.section-wrapper {
+  @apply relative py-12 sm:py-16 md:py-20 lg:py-24 overflow-hidden;
+}
+
+.section-head {
+  @apply text-center max-w-3xl mx-auto mb-8 sm:mb-12 md:mb-14 px-4;
+}
+
+.section-badge {
+  @apply inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider text-[#DFB775] bg-[#DFB775]/10 border border-[#DFB775]/25 mb-4;
+}
+
+.section-title {
+  @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-normal leading-tight text-[#FAF6F0] mb-3 sm:mb-4;
+}
+
+.section-subtitle {
+  @apply text-[#C4B5A5] text-xs sm:text-sm md:text-base leading-relaxed max-w-2xl mx-auto;
+}
+
+.glass-panel {
+  @apply bg-[#16100B]/75 backdrop-blur-xl border border-[#DFB775]/15 rounded-2xl shadow-xl transition-all duration-300;
+}
+
+.glass-panel-hover {
+  @apply hover:-translate-y-1.5 hover:border-[#DFB775]/35 hover:shadow-2xl hover:shadow-[#DFB775]/10;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-[#DFB775] to-[#C4914A] text-[#0E0906] font-semibold text-xs sm:text-sm tracking-wide uppercase shadow-lg shadow-[#DFB775]/20 hover:shadow-xl hover:shadow-[#DFB775]/35 hover:-translate-y-0.5 transition-all duration-200 cursor-pointer;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-white/5 border border-[#DFB775]/30 text-[#FAF6F0] hover:bg-[#DFB775]/15 hover:border-[#DFB775] font-medium text-xs sm:text-sm tracking-wide transition-all duration-200 cursor-pointer;
+}
+
+.text-gold-gradient {
+  @apply bg-gradient-to-r from-[#FFF0D6] via-[#DFB775] to-[#C4914A] bg-clip-text text-transparent inline-block;
+}

@@ -1,0 +1,58 @@
+@import "tailwindcss";
+@import "../styles/sections.css";
+
+:root {
+  --bg-primary: #0B0806;
+  --bg-secondary: #130E0A;
+  --bg-surface: #1A130D;
+  --border-subtle: rgba(223, 183, 117, 0.14);
+  --border-accent: rgba(223, 183, 117, 0.36);
+  --accent-gold: #DFB775;
+  --accent-gold-light: #F6DDB2;
+  --accent-gold-dark: #9F7234;
+  --text-primary: #FAF6F0;
+  --text-secondary: #C4B5A5;
+  --text-muted: #877667;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #0B0806;
+  color: #FAF6F0;
+  color-scheme: dark;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #0B0806;
+  color: #FAF6F0;
+  overflow-x: hidden;
+  position: relative;
+  line-height: 1.6;
+}
+
+/* Custom Luxury Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B0806;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2D2016;
+  border-radius: 4px;
+  border: 1px solid rgba(223, 183, 117, 0.15);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9F7234;
+}
+
+::selection {
+  background: rgba(223, 183, 117, 0.3);
+  color: #FFFFFF;
+}
